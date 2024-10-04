@@ -23,7 +23,6 @@ To run this application, you need to have **R** installed on your computer. The 
 The following R packages are used in the app:
 - **shiny**: Provides the web application framework.
 - **lubridate**: Simplifies working with dates and times.
-- **ggplot2**: Creates plots to visualize battery and memory consumption.
 - **shinyvalidate**: Adds validation checks for user inputs.
 - **dplyr**: Provides tools for data manipulation.
 - **shinyWidgets**: Adds custom user interface components.
