@@ -3,7 +3,6 @@
 ###Required packages###
 if (!require('shiny')){ install.packages('shiny', dependencies = TRUE, type="source")} ; suppressMessages(require("shiny"))
 if (!require('lubridate')){ install.packages('lubridate', dependencies = TRUE, type="source")} ; suppressMessages(require("lubridate"))
-if (!require('ggplot2')){ install.packages('ggplot2', dependencies = TRUE, type="source")} ; suppressMessages(require("ggplot2"))
 if (!require('shinyvalidate')){ install.packages('shinyvalidate', dependencies = TRUE, type="source")} ; suppressMessages(require("shinyvalidate"))
 if (!require('dplyr')){ install.packages('dplyr', dependencies = TRUE, type="source")} ; suppressMessages(require("dplyr"))
 if (!require('shinyWidgets')){ install.packages('shinyWidgets', dependencies = TRUE, type="source")} ; suppressMessages(require("shinyWidgets"))
@@ -12,9 +11,9 @@ if (!require('htmltools')){ install.packages('htmltools', dependencies = TRUE, t
 #Check that required packages are installed on the system
 areinstaled=data.frame(installed.packages())
 
-if(all(c("shiny", "lubridate", "ggplot2","shinyvalidate", "dplyr", "shinyWidgets", "htmltools") %in% areinstaled$Package)==FALSE){
-  required_packages=c("shiny", "lubridate", "ggplot2","shinyvalidate", "dplyr", "shinyWidgets", "htmltools")
-  missing_packages=c("shiny", "lubridate", "ggplot2","shinyvalidate", "dplyr", "shinyWidgets", "htmltools") %in% areinstaled$Package
+if(all(c("shiny", "lubridate", "shinyvalidate", "dplyr", "shinyWidgets", "htmltools") %in% areinstaled$Package)==FALSE){
+  required_packages=c("shiny", "lubridate", "shinyvalidate", "dplyr", "shinyWidgets", "htmltools")
+  missing_packages=c("shiny", "lubridate","shinyvalidate", "dplyr", "shinyWidgets", "htmltools") %in% areinstaled$Package
   stop(paste("The following packages are not installed:", required_packages[which(missing_packages==FALSE)], sep = " "))
 }
 
