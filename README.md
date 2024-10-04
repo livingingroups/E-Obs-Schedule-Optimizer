@@ -54,7 +54,7 @@ suppressMessages(require("lubridate"))
 3. **Run the App**:
    - In RStudio, click the "Run App" button or run the following command:
      ```r
-     shiny::runApp("app.R")
+     shiny::runApp("E-Obs-Schedule-Optimizer.R")
      ```
    - This will launch the app in your web browser.
 
