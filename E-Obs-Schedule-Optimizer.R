@@ -19,7 +19,7 @@ if(all(c("shiny", "lubridate", "shinyvalidate", "dplyr", "shinyWidgets", "htmlto
 
 #########################################################
 #########################################################
-ui <- navbarPage("eObs Settings Advisor", id = "navbar",
+ui <- navbarPage("E-Obs Schedule Optimizer", id = "navbar",
 # Main Panel
 tabPanel("Battery Life and Memory Estimator for eObs Devices",
          
